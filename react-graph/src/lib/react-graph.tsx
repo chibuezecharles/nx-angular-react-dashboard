@@ -37,7 +37,6 @@ export function ReactGraph() {
     }));
   };
 
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
