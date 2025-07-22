@@ -11,10 +11,15 @@
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2020", "dom"],
+    "jsx": "react-jsx",
+  "allowJs": true,
+  "esModuleInterop": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-react-dashboard/react-graph": ["react-graph/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
-  selector: 'app-root',
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  selector: 'angular-root',
+  standalone: true,
+  imports: [DashboardComponent],
+  template: `<angular-react-dashboard-dashboard></angular-react-dashboard-dashboard>`,
 })
-export class App {
-  protected title = 'angular-react-dashboard';
-}
+export class AppComponent {}
